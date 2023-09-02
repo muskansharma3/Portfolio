@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    
+    <link rel="icon" href="static/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- Navigation Bar for Desktop -->
+
+    <nav id="navigationbar-desktop">
+        <div class="logo">Muskan Sharma</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar for Phones/ Tabs -->
+
+    <nav id="navigationbar-collapse">
+        <div class="logo">Muskan Sharma</div>
+        <div class="menu-collapse">
+            <div class="collapse-icon" onclick="toggleMenu()">
+                <img src="static/menu.png" alt="menu" title="Menu">
+            </div>
+            <div class="menu-links">
+               <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+
+    <section id="profile">
+        <div class="section-pic">
+            <img src="static/profilepic.png" alt="Profile Picture" title="Profile Picture">
+        </div>
+        <div class="section-text">
+            <p class="text-1">Hello, My Name is</p>
+            <h1 class="title">Muskan Sharma</h1>
+            <p class="text-2">and I am a passionate</p>
+            <span id="element"></span>
+            <div class="btn-container">
+                <a href="static/MuskanSharma_resume.pdf" class="btn btn1" download>Download CV</a>
+
+                <a href='#contact' class="btn btn2">Contact Info</a>
+            </div>
+
+            <div id="socials">
+                <img src="static/linkedin.png" alt="LinkedIn Profile" title="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/muskan-sharma-1b3984194/'">
+
+                <img src="static/github.png" alt="GitHub Profile" title="GitHub Profile" class="icon" onclick="location.href='https://github.com/muskansharma3'">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about">
+        <p class="text-1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic">
+                <img src="static/aboutpic.png" alt="About Picture" title="About Picture" class="about-pic">
+            </div>
+            <div class="about-details">
+                <div class="about-container">
+                    <div class="details-container">
+                        <div class="heading">
+                            <img src="static/certificate.png" alt="Certificatiton" class="icon">
+                            <h3>EXPERIENCE</h3>
+                        </div>
+                        <span>Internships</span>
+                        <p onclick="location.href='https://drive.google.com/file/d/1Fqs8O7499fiUm_W0diVcSnfbP4Zktj2w/view?usp=drive_link'" class="intern">Web Development </p> 
+                        <p onclick="location.href='https://drive.google.com/file/d/1_sPFDmt7zBoWcnGuXy0A_O-h8G77eLTD/view?usp=drive_link'" class="intern"> Python Development</p>
+                    </div>
+                    <div class="details-container">
+                        <div class="heading">
+                            <img src="static/education.png" alt="Graduation" class="icon">
+                            <h3>QUALIFICATION</h3>
+                        </div>
+                        <span>Graduation</span>
+                        <p>Bachelor of Computer Applications (2019-2022)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-container">
+            <p> 
+                I have completed my graduation degree in Bachelor of Computer Applications in 2022 with an aggregate of 75.5%. During my coursework, I learned about various programming languages such as C, C++, Java, Python and Basics of HTML, CSS.
+            </p> <br/>
+            <p>
+                After completion of my graduation. I joined a certified course in Data Science where I learned about Python-Django Development and various  Data Analysis techniques and tools such as MySQL, Advance Excel and Tableau. I also worked on several projects during this course that helped me gain hands-on experience in Python-Django Development and Data Analysis.
+            </p> <br/>
+            <p>
+                After completing the course, I applied for a 1-month online internships in web development and Python programming. During this internship, I created mini-projects that were assigned to me. This has helped me develop a strong foundation in development which I believe will be an asset to any team.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+
+    <section id="skill">
+        <p class="text-1">Explore My</p>
+        <h1 class="title">Key Skills</h1>
+        <div class="skill-details">
+            <div class="skill-container">
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Python-Django Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>BOOTSTRAP</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>PYTHON</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>DJANGO</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                            </div>
+                        </article> 
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>GIT</h3>
+                            </div>
+                        </article>                        
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Data Analysis</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>EXCEL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>MACROS (VBA)</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>POWER BI</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>TABLEAU</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>PANDAS</h3>
+                            </div>
+                        </article> 
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>NUMPY</h3>
+                            </div>
+                        </article>  
+                        <article>
+                            <img src="static/tick.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>MS ACCESS</h3>
+                            </div>
+                        </article>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+
+    <section id="projects">
+        <p class="text-1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skill-details">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="static/shopify.png" alt="Shopify" class="project-img">
+                    </div>
+                    <h2 class="skill-sub-title project-title">
+                        SHOPIFY
+                    </h2>
+                    <h3>Shopping Website</h3>
+                    <div class="btn-container">
+                        <button class="btn btn1 project-btn" onclick="location.href='http://muskansharma2k1.pythonanywhere.com/'">Website</button>
+                        <button class="btn btn1 project-btn" onclick="location.href='https://github.com/muskansharma3/shopify'">Code</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="static/songer.png" alt="Songer" class="project-img">
+                    </div>
+                    <h2 class="skill-sub-title project-title">
+                        SONGER
+                    </h2>
+                    <h3>Music Player</h3>
+                    <div class="btn-container">
+                        <button class="btn btn1 project-btn" onclick="location.href='https://songer-musicplayer.netlify.app'">Website</button>
+                        <button class="btn btn1 project-btn" onclick="location.href='https://github.com/muskansharma3/Songer_music_player'">Code</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="static/DQ.png" alt="Daily Quote" class="project-img">
+                    </div>
+                    <h2 class="skill-sub-title project-title">
+                        DAILY QUOTES
+                    </h2>
+                    <h3>Quote Generator</h3>
+                    <div class="btn-container">
+                        <button class="btn btn1 project-btn" onclick="location.href='https://daily-quotes-generator.netlify.app'">Website</button>
+                        <button class="btn btn1 project-btn" onclick="location.href='https://github.com/muskansharma3/Quote_Generator'">Code</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="static/clock.png" alt="Alarm Clock" class="project-img">
+                    </div>
+                    <h2 class="skill-sub-title project-title">
+                        ALARM
+                    </h2>
+                    <h3>Alarm Clock</h3>
+                    <div class="btn-container">
+                        <button class="btn btn1 project-btn" onclick="location.href='https://github.com/muskansharma3/AlarmClock_Manager'">Code</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="static/texteditor.png" alt="Text Editor" class="project-img">
+                    </div>
+                    <h2 class="skill-sub-title project-title">
+                        DIGNOTE
+                    </h2>
+                    <h3>Text Editor</h3>
+                    <div class="btn-container">
+                        <button class="btn btn1 project-btn" onclick="location.href='https://github.com/muskansharma3/CodeClauseInternship_TextEditor'">Code</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="static/musiclay.png" alt="Music Player in Python" class="project-img">
+                    </div>
+                    <h2 class="skill-sub-title project-title">
+                        MUSICLAY
+                    </h2>
+                    <h3>Music Player</h3>
+                    <div class="btn-container">
+                        <button class="btn btn1 project-btn" onclick="location.href='https://github.com/muskansharma3/CodeClauseInternship_MusicPlayer'">Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+        <p class="text-1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info">
+            <div class="info-container">
+                <img src="static/email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:muskansharma77704@gmail.com">muskansharma77704@gmail.com</a></p>
+            </div>
+            <div class="info-container">
+                <img src="static/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/muskan-sharma-1b3984194/">LinkedIn</a></p>
+            </div>
+        </div>
+        <img src="static/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#profile'">
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Muskan Sharma. <br/>All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Python Developer.', 'Data Analyst.'],
+            typeSpeed: 100,
+            loop: true,
+        });
+    </script>
+
+</body>
+</html>
